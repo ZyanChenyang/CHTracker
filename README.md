@@ -126,22 +126,20 @@ Ours ReID models for **MOT17/MOT20** is the same as [BoT-SORT](https://github.co
 
 **dancetrack-val dataset**
 
-
+```
 python tools/run_chtracker_dance.py -f exps/example/mot/yolox_dancetrack_val_chtracker.py -b 1 -d 1 --fuse
-
 ```
 
 **dancetrack-test dataset**
 
 ```
-
 python tools/run_chtracker_dance.py --test -f exps/example/mot/yolox_dancetrack_test_chtracker.py -b 1 -d 1 --fuse 
-
 ```
 
 CHTracker is designed for online tracking, but offline interpolation has been demonstrated efficient for many cases and used by other online trackers:
 
-```shell
+```
+shell
 # offline post-processing
 python3 tools/interpolation.py $result_path $save_path
 ```
