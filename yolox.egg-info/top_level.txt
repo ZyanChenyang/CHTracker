@@ -1,0 +1,16 @@
+Detections
+TrackEval
+YOLOX_outputs
+build
+datasets
+exp_results
+exps
+fast_reid
+motmetrics
+pretrained
+tools
+trackers
+trackeval
+utils
+visualizations
+yolox
